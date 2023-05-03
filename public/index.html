@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url(main.css);
+    </style>
+</head>
+<body>
+    <div class="left-navbar">
+        <nav class="navbar">
+            <h1 class="title">Memews</h1>
+            <ul>
+                <li>Feed</li>
+                <li>Explore</li>
+                <li>Profile</li>
+            </ul>
+            <div class="credits">
+                Me and my team
+            </div>
+        </nav>
+    </div>
+    <div class="navbar-right">
+        <nav class="navbar">
+            <div class="profile">
+                <img class="pfp" src="hashcoded.jpg" alt="">
+                <h3 class="name">Dhruv bhavsar</h3>
+                <h4 class="user-id">@dhruv4real</h4>
+            </div>
+            <ul>
+                <li>Account settings</li>
+                <li>Connect socials</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="right-nav">
+        <button class="btn nav-btn">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+
+
+    <!-- main section -->
+    <div class="main">
+
+        <div class="blank"></div>
+        <div class="header">
+            <div class="headline">
+                <h1>Some Headline: some headline</h1>
+            </div>
+        </div>
+        <div class="blank"></div>
+
+        <div class="blank"></div>
+        <div class="container">
+            <div class="post">
+                <div class="post-profile">
+                        <div class="left" style="display:flex; align-items:center;">
+                        <img src="hashcoded.jpg" style="width:2rem;height:2rem; object-fit:cover" alt="">
+                        <span class="name" style="padding-left:1rem">Dhruv bhavsar</span>
+                    </div>
+                    <div class="right"><i class="fas fa-ellipsis"></i></div>
+                </div>
+                <div class="post-media">
+                    <img src="hashcoded.jpg" class="post-image" alt="">
+                </div>
+                <div class="post-btns">
+                    <button class="btn"><i class="fa fa-flag" style="color:darkgreen;" aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fa fa-flag" style="color:crimson;" aria-hbidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="blank"></div>
+
+        <div class="blank"></div>
+        <div class="container">
+            <div class="post">
+                <div class="post-profile">
+                        <div class="left" style="display:flex; align-items:center;">
+                        <img src="hashcoded.jpg" style="width:2rem;height:2rem; object-fit:cover" alt="">
+                        <span class="name" style="padding-left:1rem">Dhruv bhavsar</span>
+                    </div>
+                    <div class="right"><i class="fas fa-ellipsis"></i></div>
+                </div>
+                <div class="post-media">
+                    <img src="hashcoded.jpg" class="post-image" alt="">
+                </div>
+                <div class="post-btns">
+                    <button class="btn"><i class="fa fa-flag" style="color:darkgreen; " aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fa fa-flag" style="color:crimson;" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <button name="signInWithGoogle" id="signInWithGoogle">Sign in with google</button>
+    
+    </div>
+
+    
+
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+
+</body>
+</html>

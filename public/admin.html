@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js';
+        import { getAuth } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js';
+        const firebaseConfig = {
+            apiKey: "AIzaSyAlV8ACPYU76j_wkUE5QbbTEIypm2_uYXw",
+            authDomain: "memews-app.firebaseapp.com",
+            databaseURL:
+                "https://memews-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "memews-app",
+            storageBucket: "memews-app.appspot.com",
+            messagingSenderId: "164995456352",
+            appId: "1:164995456352:web:a2aaf52f2afbcdd1ee5205",
+            measurementId: "G-7QJB7B5RXL",
+        };
+        const app=initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    <form id="meme-form">
+        <input type="file" name="meme-image" id="meme-image" onchange="getFile(event)"/>
+        <input type="text" name="title" id="meme-title" placeholder="title"/>
+        <textarea name="desc" id="meme-desc" cols="30" rows="10" placeholder ="type a description"></textarea>
+        <input type="text" name="links" id="meme-links" placeholder="links" />
+        <input type="text" name="type" id="meme-type" placeholder="type"/>
+        <button type="submit" onclick="uploadImage()">Upload</button>
+    </form>
+</body>
+
+    <script src="admin.js" type="module"></script>
+</html>
